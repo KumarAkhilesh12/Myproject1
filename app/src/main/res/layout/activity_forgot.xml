@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".ForgotActivity">
+    <ImageView
+        android:id="@+id/imgFood1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foodlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:id="@+id/txtforgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your resitered mobile number and email below:"
+        android:layout_below="@id/imgFood1"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/etForgotMob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/txtforgot"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:maxLength="10"/>
+    <EditText
+        android:id="@+id/etForgotEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/etForgotMob"
+        android:hint="Email Address"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textEmailAddress"/>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E40404"
+        android:layout_below="@id/etForgotEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Next"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"/>
+
+
+
+</RelativeLayout>
